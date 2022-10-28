@@ -8,9 +8,12 @@
   "scripts": {
     "dev": "vuepress dev .",
     "start": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/Thunderleng/Blog-vue-leng.git -b gh-pages"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "vuepress": "2.0.0-beta.51",
     "vuepress-theme-reco": "2.0.0-beta.41"
   }
